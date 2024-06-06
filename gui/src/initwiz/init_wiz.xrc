@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resource xmlns="http://www.wxwidgets.org/wxxrc" version="2.5.3.0">
+  <object class="wxWizard" name="FirstUseWiz">
+    <size>800,650</size>
+    <style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER|wxSTAY_ON_TOP</style>
+    <title>New OpenCPN Initial Configuration</title>
+    <centered>1</centered>
+    <object class="wxWizardPageSimple" name="m_wpLangUnits">
+      <size>800,600</size>
+      <object class="wxBoxSizer" name="bSizerLangUnits">
+        <orient>wxVERTICAL</orient>
+        <object class="sizeritem">
+          <flag>wxEXPAND</flag>
+          <border>5</border>
+          <option>1</option>
+          <object class="wxStaticBoxSizer" name="sbSizerUnits">
+            <orient>wxVERTICAL</orient>
+            <label>Units and formats</label>
+            <object class="sizeritem">
+              <flag>wxEXPAND</flag>
+              <border>5</border>
+              <option>1</option>
+              <object class="wxFlexGridSizer" name="fgSizerUnits">
+                <vgap>0</vgap>
+                <hgap>0</hgap>
+                <growablerows></growablerows>
+                <growablecols></growablecols>
+                <rows>0</rows>
+                <cols>2</cols>
+                <object class="sizeritem">
+                  <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                  <border>5</border>
+                  <option>0</option>
+                  <object class="wxStaticText" name="m_stDepth">
+                    <label>Depth</label>
+                    <wrap>-1</wrap>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <flag>wxALL</flag>
+                  <border>5</border>
+                  <option>0</option>
+                  <object class="wxChoice" name="m_cDepth">
+                    <selection>0</selection>
+                    <content>
+                      <item>Feet</item>
+                      <item>Meters</item>
+                      <item>Fathoms</item>
+                    </content>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                  <border>5</border>
+                  <option>0</option>
+                  <object class="wxStaticText" name="m_stDistance">
+                    <label>Distance</label>
+                    <wrap>-1</wrap>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <flag>wxALL</flag>
+                  <border>5</border>
+                  <option>0</option>
+                  <object class="wxChoice" name="m_cDistance">
+                    <selection>0</selection>
+                    <content>
+                      <item>Nautical miles</item>
+                      <item>Statute miles</item>
+                      <item>Kilometers</item>
+                      <item>Meters</item>
+                    </content>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                  <border>5</border>
+                  <option>0</option>
+                  <object class="wxStaticText" name="m_stSpeed">
+                    <label>Speed</label>
+                    <wrap>-1</wrap>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <flag>wxALL</flag>
+                  <border>5</border>
+                  <option>0</option>
+                  <object class="wxChoice" name="m_cSpeed">
+                    <selection>0</selection>
+                    <content>
+                      <item>Knots</item>
+                      <item>mph</item>
+                      <item>km/h</item>
+                      <item>m/s</item>
+                    </content>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                  <border>5</border>
+                  <option>0</option>
+                  <object class="wxStaticText" name="m_stPosition">
+                    <label>Position</label>
+                    <wrap>-1</wrap>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <flag>wxALL</flag>
+                  <border>5</border>
+                  <option>0</option>
+                  <object class="wxChoice" name="m_cPosition">
+                    <selection>0</selection>
+                    <content>
+                      <item>Degrees, decimal minutes (DD MM.MM)</item>
+                      <item>Decimal degrees (DD.DDDDD)</item>
+                      <item>Degrees, minutes, seconds (DD MM SS)</item>
+                      <item></item>
+                    </content>
+                  </object>
+                </object>
+                <object class="spacer">
+                  <flag>wxEXPAND</flag>
+                  <border>5</border>
+                  <option>1</option>
+                  <size>0,0</size>
+                </object>
+                <object class="sizeritem">
+                  <flag>wxALL</flag>
+                  <border>5</border>
+                  <option>0</option>
+                  <object class="wxCheckBox" name="m_cbShowTrue">
+                    <label>Show true headings and bearings</label>
+                    <checked>1</checked>
+                  </object>
+                </object>
+                <object class="spacer">
+                  <flag>wxEXPAND</flag>
+                  <border>5</border>
+                  <option>1</option>
+                  <size>0,0</size>
+                </object>
+                <object class="sizeritem">
+                  <flag>wxALL</flag>
+                  <border>5</border>
+                  <option>0</option>
+                  <object class="wxCheckBox" name="m_cbShowMagnetic">
+                    <label>Show magnetic headings and bearings</label>
+                    <checked>0</checked>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+        <object class="spacer">
+          <flag>wxEXPAND</flag>
+          <border>5</border>
+          <option>0</option>
+          <size>0,20</size>
+        </object>
+        <object class="sizeritem">
+          <flag>wxEXPAND | wxALL</flag>
+          <border>5</border>
+          <option>1</option>
+          <object class="wxRichTextCtrl" name="m_rtLangUnitInfo">
+            <style>wxVSCROLL|wxHSCROLL|wxNO_BORDER|wxWANTS_CHARS</style>
+            <value></value>
+          </object>
+        </object>
+      </object>
+    </object>
+    <object class="wxWizardPageSimple" name="m_wpConnections">
+      <object class="wxBoxSizer" name="bSizerConnections">
+        <orient>wxVERTICAL</orient>
+        <object class="sizeritem">
+          <flag>wxALL</flag>
+          <border>5</border>
+          <option>0</option>
+          <object class="wxStaticText" name="m_stSources">
+            <label>Detected navigation data sources:</label>
+            <wrap>-1</wrap>
+          </object>
+        </object>
+        <object class="sizeritem">
+          <flag>wxALL|wxEXPAND</flag>
+          <border>5</border>
+          <option>1</option>
+          <object class="wxCheckListBox" name="m_clSources">
+            <content/>
+          </object>
+        </object>
+        <object class="sizeritem">
+          <flag>wxALL</flag>
+          <border>5</border>
+          <option>0</option>
+          <object class="wxButton" name="m_btnRescanSources">
+            <label>Rescan...</label>
+            <default>0</default>
+            <auth_needed>0</auth_needed>
+            <markup>0</markup>
+            <bitmap/>
+          </object>
+        </object>
+        <object class="spacer">
+          <flag>wxEXPAND</flag>
+          <border>5</border>
+          <option>0</option>
+          <size>0,20</size>
+        </object>
+        <object class="sizeritem">
+          <flag>wxEXPAND | wxALL</flag>
+          <border>5</border>
+          <option>2</option>
+          <object class="wxRichTextCtrl" name="m_rtConnectionInfo">
+            <style>wxVSCROLL|wxHSCROLL|wxNO_BORDER|wxWANTS_CHARS</style>
+            <value></value>
+          </object>
+        </object>
+      </object>
+    </object>
+    <object class="wxWizardPageSimple" name="m_wpCharts">
+      <size>800,600</size>
+      <object class="wxBoxSizer" name="bSizerCharts">
+        <orient>wxVERTICAL</orient>
+        <object class="sizeritem">
+          <flag>wxALL</flag>
+          <border>5</border>
+          <option>0</option>
+          <object class="wxStaticText" name="m_stAddCharts">
+            <label>Add existing charts</label>
+            <wrap>-1</wrap>
+          </object>
+        </object>
+        <object class="sizeritem">
+          <flag>wxALL|wxEXPAND</flag>
+          <border>5</border>
+          <option>0</option>
+          <object class="wxListBox" name="m_lbChartsDirs">
+            <content/>
+          </object>
+        </object>
+        <object class="sizeritem">
+          <flag>wxALL</flag>
+          <border>5</border>
+          <option>0</option>
+          <object class="wxButton" name="m_btnAddChartDir">
+            <label>Add chart directory...</label>
+            <default>0</default>
+            <auth_needed>0</auth_needed>
+            <markup>0</markup>
+            <bitmap/>
+          </object>
+        </object>
+        <object class="spacer">
+          <flag>wxEXPAND</flag>
+          <border>5</border>
+          <option>0</option>
+          <size>0,20</size>
+        </object>
+        <object class="sizeritem">
+          <flag>wxEXPAND | wxALL</flag>
+          <border>5</border>
+          <option>2</option>
+          <object class="wxRichTextCtrl" name="m_rtChartDirInfo">
+            <style>wxVSCROLL|wxHSCROLL|wxNO_BORDER|wxWANTS_CHARS</style>
+            <value></value>
+          </object>
+        </object>
+      </object>
+    </object>
+    <object class="wxWizardPageSimple" name="m_wpFinish">
+      <size>800,600</size>
+      <object class="wxBoxSizer" name="bSizerFinish">
+        <orient>wxVERTICAL</orient>
+        <object class="sizeritem">
+          <flag>wxALL|wxEXPAND</flag>
+          <border>5</border>
+          <option>1</option>
+          <object class="wxHtmlWindow" name="m_htmlWinFinish">
+            <style>wxHW_SCROLLBAR_AUTO</style>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+</resource>
+

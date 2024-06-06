@@ -66,7 +66,7 @@ class FirstUseWizImpl : public FirstUseWiz {
 public:
   FirstUseWizImpl(wxWindow* parent, MyConfig *pConfig,
                   wxWindowID id = wxID_ANY,
-                  const wxString& title = _("OpenCPN Initial Configuration"),
+                  const wxString& title = _("New OpenCPN Initial Configuration"),
                   const wxBitmap& bitmap = wxNullBitmap,
                   const wxPoint& pos = wxDefaultPosition,
                   long style = wxDEFAULT_DIALOG_STYLE | wxRESIZE_BORDER |
